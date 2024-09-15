@@ -1,6 +1,8 @@
 :root {
-    --hover-color: rgb(107, 106, 106);
-    --base-color: black;
+    --light-grey: rgb(95, 94, 94);
+    --hover-color: #007BFF;
+    /* --base-color: black; */
+    --base-color: rgb(0,0,128);
 }
 * {
     margin: 0;
@@ -128,11 +130,11 @@ nav  a {
 .home > .home-text > .role {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--hover-color);
+    color: var(--base-color);
 }
 .home > .home-text > .intro {
     font-size: 1.25rem;
-    color: var(--hover-color);
+    color: var(--light-grey);
 }
 
 .btn {
@@ -146,6 +148,7 @@ nav  a {
     font-weight: bold;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    margin: 10px;
 
 }
 .btn:hover {
@@ -223,6 +226,35 @@ nav  a {
     width: fit-content;
     display: flex;
 }
+.ctn-btn:hover a{
+    color: white;
+}   
+.ctn-btn:hover img {
+    filter: invert(100%);
+}
+
+/*Projects Section */
+
+.project-item {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #f1f1f1;
+    height: 400px;
+    width: 500px;
+    /* aspect-ratio: 3 / 2; */
+    margin: 5vh;
+    border-radius: 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+}
+.project-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--base-color);
+}
 
 /* Mobile Responsive Attributes */
 @media screen and (max-width: 768px) {
@@ -284,3 +316,35 @@ nav  a {
         margin-bottom: 10%;
     }
 }
+
+
+
+
+
+/* Style for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #video-player {
+    width: 60%;
+    height: 60%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }

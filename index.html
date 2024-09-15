@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="index.js" defer></script>
+
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -31,7 +32,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -47,7 +48,7 @@
                 <div class="name">Ghufran Nazir</div>
                 <span class="role">Computer Scientist</span>
                 <div style="margin: 30px 10px;">
-                    <button class="btn">Download CV</button>
+                    <button class="btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
                     <button class="btn">Hire Me</button>
                 </div>
                 <div class="icons">
@@ -59,6 +60,7 @@
             </div>
         </div>
     </section>
+
     <section id="skills">
         <div class="skills">
             <div class="section-heading">Skills</div>
@@ -117,20 +119,72 @@
         </div>
     </section>
 
+     <!-- The overlay that will show the video -->
+  <div class="overlay" id="videoOverlay">
+    <span class="close-btn" id="closeOverlay">&times;</span>
+        <video controls id="video-player">
+            <source src="assets/chess_demo.mp4" type="video/mp4">
+            Your browser does not support the video player.
+          </video>
+  </div>
+
+    <section id="projects">
+        <div class="projects">
+            <div class="section-heading">Projects</div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="project-item">
+                    <div class="project-name">
+                        Shogi (Japanese Chess)
+                    </div>
+                    <p>A Graphical Interface of Japanese version of chess developed for desktop using C++.</p>
+                    <div>
+                        
+                        <button class="btn" onclick="window.open('https://github.com/ghufran1054/Shogi-Japanese-Chess')">Github</button>
+                        <button class="btn" id="playButton">Demo</button>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">
+                        Eatopia
+                    </div>
+                    <p>A Food delivery mobile application developed using Flutter framework. Firebase used for backend</p>
+                    <div>
+                        <button class="btn" onclick="window.open('https://github.com/ghufran1054/Eatopia')">Github</button>
+                        <button class="btn">Demo</button>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">
+                        WhatsApp Clone
+                    </div>
+                    <p>Clone for whatsapp messanger application developed using Flutter. NodeJS used for backend and MongoDB to store user messages and Info</p>
+                    <div>
+                        <button class="btn" onclick="window.open('https://github.com/ghufran1054/whatsapp_clone')">Github</button>
+                        <button class="btn">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
     <section id="contact">
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <div class="section-heading">Contact me</div>
-            <span style="color: var(--hover-color);">Get in touch</span>
+            <span style="color: var(--light-grey);">Get in touch</span>
         </div>
         <div class="contact-container">
-            <button class="btn" style="margin-bottom: 10px;">
+            <button class="btn ctn-btn">
                 <span style="margin-right: 10px;">
                     <img src="assets/email.png" alt="email" style="height: 30px; width: 30px">
                 </span>
                 <a href="mailto:ghufran1054@gmail.com" target="_blank"
                     style="font-weight: 100; font-family: Poppins;">ghufran1054@gmail.com</a>
             </button>
-            <button class="btn">
+            <button class="btn ctn-btn">
                 <span style="margin-right: 10px;">
                     <img src="assets/linkedin.png" alt="linkedin" style="height: 30px; width: 30px">
                 </span>

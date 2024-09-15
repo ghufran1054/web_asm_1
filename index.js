@@ -34,3 +34,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+
+
+const playButton = document.getElementById('playButton');
+const videoOverlay = document.getElementById('videoOverlay');
+const closeOverlay = document.getElementById('closeOverlay');
+
+// Show overlay when button is clicked
+playButton.addEventListener('click', function() {
+  videoOverlay.style.display = 'flex';
+});
+
+// Close overlay when close button is clicked
+closeOverlay.addEventListener('click', function() {
+  videoOverlay.style.display = 'none';
+});
+
+// Close overlay if clicked outside the video
+videoOverlay.addEventListener('click', function(event) {
+  if (event.target === videoOverlay) {
+    videoOverlay.style.display = 'none';
+  }
+});
