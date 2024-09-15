@@ -25,7 +25,7 @@ body {
     text-align: center;
 }
 section {
-    margin: 15% 5%;
+    margin: 10% 5%;
 }
 .section-heading {
     font-size: 3rem;
@@ -98,45 +98,59 @@ nav  a {
     padding: 10px;
     font-size: 1.5rem;
 }
-/* Home section */
-.home {
+/* about section */
+.about {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10vh;
 }
-.home-text{
+.about-text{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    width: 30vw;
 }
-.home-picture {
+
+.about-picture {
     margin-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-picture > img {
+.about-picture > img {
 /* Give a circular shape to the image */
     border-radius: 50%;
     width: 35vh;
     aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
 }
-.home > .home-text > .name {
+.about > .about-text > .name {
     font-size: 3rem;
     font-weight: bold;
 }
-.home > .home-text > .role {
+.about > .about-text > .role {
     font-size: 2rem;
     font-weight: bold;
     color: var(--base-color);
 }
-.home > .home-text > .intro {
-    font-size: 1.25rem;
-    color: var(--light-grey);
+.about > .about-text > .intro {
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Noto Nastaliq Urdu";
 }
-
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px 20px;
+    width: 20vw;
+    padding: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+}
 .btn {
     background-color: white;
     border: 1px solid black;
@@ -155,6 +169,7 @@ nav  a {
     background-color: var(--hover-color);
     color: white;
     cursor: pointer;
+    border: transparent;
 }
 
 .icons img {
@@ -237,14 +252,12 @@ nav  a {
 
 .project-item {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
     border: 1px solid #f1f1f1;
     height: 400px;
-    width: 500px;
-    /* aspect-ratio: 3 / 2; */
+    width: 350px;
     margin: 5vh;
     border-radius: 20px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -307,11 +320,11 @@ nav  a {
     nav > ul {
         display: none;
     }
-    .home {
+    .about {
         flex-direction: column;
         justify-content: center;
     }
-    .home-picture {
+    .about-picture {
         margin-right: 0;
         margin-bottom: 10%;
     }

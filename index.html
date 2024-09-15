@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -21,7 +24,7 @@
             </div>
             <div class="menu-list">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -30,40 +33,56 @@
         </div>
         <div id="logo">Ghufran Nazir</div>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home">
-        <div class="home">
-            <div class="home-picture home-container">
-                <img src="https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt="home-picture">
-            </div>
-            <div class="home-text home-container">
-                <span class="intro">Hello, I'm</span>
-                <div class="name">Ghufran Nazir</div>
-                <span class="role">Computer Scientist</span>
-                <div style="margin: 30px 10px;">
-                    <button class="btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                    <button class="btn">Hire Me</button>
+    <section id="about" style="margin-top: 0;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="about">
+                <div class="about-picture">
+                    <img src="/assets/profile.jpeg"
+                        alt="about-picture">
                 </div>
-                <div class="icons">
-                    <a href="https://github.com/ghufran1054" target="_blank"><img src="assets/github.png"
-                            alt="github"></a>
-                    <a href="https://www.linkedin.com/in/ghufran-nazir-00b66a23b/" target="_blank"><img
-                            src="assets/linkedin.png" alt="linkedin"></a>
+                <div class="about-text">
+                    <span class="intro">السلام عليكم</span>
+                    <span style="font-size: 1.25rem; color: var(--light-grey); margin-top: 10px;">I'm</span>
+                    <div class="name">Ghufran Nazir</div>
+                    <span class="role">Computer Scientist</span>
+                    <div style="margin: 30px 10px;">
+                        <button class="btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                        <button class="btn" onclick="window.open('mailto:ghufran1054@gmail.com?subject=Job Inquiry&body=Hi Ghufran,%0AI hope you are fine. I am interested in hiring you for...')">Hire Me</button>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/ghufran1054" target="_blank"><img src="assets/github.png"
+                                alt="github"></a>
+                        <a href="https://www.linkedin.com/in/ghufran-nazir-00b66a23b/" target="_blank"><img
+                                src="assets/linkedin.png" alt="linkedin"></a>
+                    </div>
                 </div>
             </div>
+            <span style="font-size: 1.25 rem; color: var(--light-grey); margin-top: 10vh;">Get to know more</span>
+            <div class="section-heading">
+                About Me
+            </div>
+            <div class="details-container">
+                <h3>Education</h3>
+                <p>B.Sc. Computer Science, Information Technology University</p>
+            </div>
+            <p style="color: var(--light-grey); width: 70vw; margin-top: 20px;">I am currently a Final year undergraduate student at ITU. My areas of Research interest are Computer Vision / Deep learning in which I am pursuing my FYP. I also have some develepor experience with Flutter and simple HTML, CSS & Js</p>
         </div>
     </section>
 
     <section id="skills">
         <div class="skills">
-            <div class="section-heading">Skills</div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <span style="color: var(--light-grey);">Explore my</span>
+                <div class="section-heading">Skills</div>
+            </div>
+
             <div class="skills-container">
                 <div class="skills-item">
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
@@ -130,7 +149,11 @@
 
     <section id="projects">
         <div class="projects">
-            <div class="section-heading">Projects</div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <span style="color: var(--light-grey);">Browse my recent</span>
+                <div class="section-heading">Projects</div>
+            </div>
+
             <div style="display: flex; flex-wrap: wrap; justify-content: center;">
                 <div class="project-item">
                     <div class="project-name">
@@ -173,8 +196,8 @@
 
     <section id="contact">
         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <div class="section-heading">Contact me</div>
             <span style="color: var(--light-grey);">Get in touch</span>
+            <div class="section-heading">Contact me</div>
         </div>
         <div class="contact-container">
             <button class="btn ctn-btn">
@@ -194,9 +217,10 @@
         </div>
     </section>
     <footer>
-        <div class="footer-container" style="margin-bottom: 50px;">
+        <div class="footer-container" style="margin-bottom: 50px; padding: 0px 2%;">
             <div class="footer-text">
-                <span>Designed & Developed by Ghufran Nazir, 2024</span>
+
+                <span>&copy All rights reserved 2024 | Developed by Ghufran Nazir</span>
             </div>
     </footer>
 </body>
