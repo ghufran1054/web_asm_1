@@ -1,0 +1,209 @@
+/* Navbar Section */
+:root {
+    --hover-color: rgb(62, 62, 62);
+    --base-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    padding: 3% 5% 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--base-color);
+    text-decoration: none;
+
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+nav > ul > li {
+    margin: 0 10px;
+    position: relative; /* Ensure the li is positioned relative for absolute positioning of ::after */
+
+}
+nav a:hover {
+    color: var(--hover-color);
+
+}
+nav > ul > li:hover::after {
+    content: '';
+    display: block;
+    width: 100%; /* Make the line full width */
+    height: 2px;
+    background-color: var(--hover-color);
+    position: absolute;
+    bottom: -5px; /* Position it below the list item */
+    left: 0; /* Align it to the left */
+}
+@keyframes widthGrow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+nav > ul > li:hover::after {
+    width: 100%;
+    animation: widthGrow 0.3s;
+}
+nav  a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+/* Home section */
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.home-picture {
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-picture > img {
+/* Give a circular shape to the image */
+    border-radius: 50%;
+    width: 35vh;
+    aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+}
+.home > .home-text > .name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.home > .home-text > .role {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--hover-color);
+}
+.home > .home-text > .intro {
+    font-size: 1.25rem;
+    color: var(--hover-color);
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 30px 10px;
+    text-decoration: none;
+    border-radius: 25px 25px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+.btn:hover {
+    background-color: var(--hover-color);
+    color: white;
+    cursor: pointer;
+}
+
+.icons img {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+}
+.icons img:hover {
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* Mobile Responsive Attributes */
+@media screen and (max-width: 768px) {
+    nav {
+        /* flex-direction: column; */
+        justify-content: space-around;
+    }
+    #menu {
+        position: relative; 
+        display: inline-block;
+    }
+    .open {
+        display: block;
+    }
+    .menu-icon span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--base-color);
+        margin: 5px 0;
+        display: block;
+    }
+    .menu-list {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 1000;
+        background-color: white;
+        padding: 20px 20px;
+        border: 1px solid #f1f1f1;
+        border-radius: 10% 10%;
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+    .menu-list li {
+        margin: 10px 0;
+    }
+    .menu-icon {
+        cursor: pointer;
+    }
+    nav > ul {
+        display: none;
+    }
+    .home {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-picture {
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+}
