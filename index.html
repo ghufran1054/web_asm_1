@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="index.js" defer></script>
 </head>
+
 <body>
     <nav>
         <div id="menu">
@@ -19,7 +21,7 @@
             <div class="menu-list">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -28,30 +30,121 @@
         <div id="logo">Ghufran Nazir</div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section class = "home">
-        <div class="home-picture home-container">
-            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="home-picture">
-        </div>
-        <div class="home-text home-container">
-            <span class="intro">Hello, I'm</span>
-            <div class="name">Ghufran Nazir</div>
-            <span class="role">Computer Scientist</span>
-            <div> 
-                <button class="btn">Download CV</button>
-                <button class="btn">Hire Me</button>
+    <section id="home">
+        <div class="home">
+            <div class="home-picture home-container">
+                <img src="https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="home-picture">
             </div>
-            <div class="icons">
-                <a href="https://github.com/ghufran1054" target="_blank"><img src="assets/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/ghufran-nazir-00b66a23b/" target="_blank"><img src="assets/linkedin.png" alt="linkedin"></a>
+            <div class="home-text home-container">
+                <span class="intro">Hello, I'm</span>
+                <div class="name">Ghufran Nazir</div>
+                <span class="role">Computer Scientist</span>
+                <div style="margin: 30px 10px;">
+                    <button class="btn">Download CV</button>
+                    <button class="btn">Hire Me</button>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/ghufran1054" target="_blank"><img src="assets/github.png"
+                            alt="github"></a>
+                    <a href="https://www.linkedin.com/in/ghufran-nazir-00b66a23b/" target="_blank"><img
+                            src="assets/linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
         </div>
     </section>
-    
+    <section id="skills">
+        <div class="skills">
+            <div class="section-heading">Skills</div>
+            <div class="skills-container">
+                <div class="skills-item">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="assets/web.png" alt="html">
+                        <span>HTML, CSS & Javascript</span>
+                    </div>
+                    <p> Proficient in creating responsive web pages semantic HTML, modern CSS (Flexbox, Grid), and
+                        dynamic JavaScript for seamless, interactive user experiences.</p>
+                </div>
+                <div class="skills-item">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="assets/python.png" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <p>Skilled in Python for scripting, data analysis, and automating tasks, with expertise in data
+                        science libraries (Pandas, NumPy) and deep learning frameworks (TensorFlow, PyTorch) for
+                        building AI-driven solutions.</p>
+                </div>
+                <div class="skills-item">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="assets/flutter.png" alt="Flutter">
+                        <span>Flutter</span>
+                    </div>
+                    <p>
+                        Experienced in building cross-platform mobile apps using Flutter, creating responsive,
+                        high-performance UIs with Dart, and integrating backend services for seamless functionality
+                        across Android and iOS.
+                    </p>
+                </div>
+                <div class="skills-item">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="assets/cpp.png" alt="c++">
+                        <span>C / C++</span>
+                    </div>
+                    <p>
+                        Proficient in C / C++ for developing system software, embedded systems, and high-performance
+                        applications, with expertise in data structures, algorithms, and object-oriented programming
+                        concepts.
+                </div>
+                <div class="skills-item">
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img src="assets/db.png" alt="Databases">
+                        <span>MongoDB & SQL</span>
+                    </div>
+                    <p>
+                        Skilled in MongoDB for NoSQL database management and SQL for relational database management,
+                        with expertise in designing schemas, querying data, and optimizing database performance for
+                        efficient data storage and retrieval.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div class="section-heading">Contact me</div>
+            <span style="color: var(--hover-color);">Get in touch</span>
+        </div>
+        <div class="contact-container">
+            <button class="btn" style="margin-bottom: 10px;">
+                <span style="margin-right: 10px;">
+                    <img src="assets/email.png" alt="email" style="height: 30px; width: 30px">
+                </span>
+                <a href="mailto:ghufran1054@gmail.com" target="_blank"
+                    style="font-weight: 100; font-family: Poppins;">ghufran1054@gmail.com</a>
+            </button>
+            <button class="btn">
+                <span style="margin-right: 10px;">
+                    <img src="assets/linkedin.png" alt="linkedin" style="height: 30px; width: 30px">
+                </span>
+                <a href="https://www.linkedin.com/in/ghufran-nazir-00b66a23b/" target="_blank"
+                    style="font-weight: 100; font-family: Poppins;">LinkedIn</a>
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container" style="margin-bottom: 50px;">
+            <div class="footer-text">
+                <span>Designed & Developed by Ghufran Nazir, 2024</span>
+            </div>
+    </footer>
 </body>
+
 </html>
