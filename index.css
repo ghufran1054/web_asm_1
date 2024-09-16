@@ -122,7 +122,7 @@ nav  a {
 .about-picture > img {
 /* Give a circular shape to the image */
     border-radius: 50%;
-    width: 35vh;
+    width: min(350px, 50vw);
     aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
 }
 .about > .about-text > .name {
@@ -146,7 +146,7 @@ nav  a {
     flex-direction: column;
     border: 1px solid #f1f1f1;
     border-radius: 20px 20px;
-    width: 20vw;
+    width: max(20vw, 300px);
     padding: 2%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 5vh;
@@ -171,7 +171,9 @@ nav  a {
     cursor: pointer;
     border: transparent;
 }
-
+.icons{
+    display: flex;
+}
 .icons img {
     height: 40px;
     width: 40px;

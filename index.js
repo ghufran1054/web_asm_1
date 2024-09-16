@@ -34,28 +34,42 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const playButton = document.getElementById("playButton");
 const videoOverlay = document.getElementById("videoOverlay");
 const closeOverlay = document.getElementById("closeOverlay");
-const video = document.getElementById("video-player");
 
-// Show overlay when button is clicked
-playButton.addEventListener("click", function () {
-  videoOverlay.style.display = "flex";
-});
+const projectNametoPath = {
+  "Shogi (Japanese Chess)": "assets/chess_demo.mp4",
+  Eatopia: "assets/chess_demo.mp4",
+  "WhatsApp Clone": "assets/chess_demo.mp4",
+};
 
-// Close overlay when close button is clicked
-closeOverlay.addEventListener("click", function () {
-  videoOverlay.style.display = "none";
-  video.pause();
-  video.currentTime = 0;
-});
+const projectItems = document.getElementsByClassName("project-item");
+for (let i = 0; i < projectItems.length; i++) {
+  const playButton = projectItems[i].querySelector(".demo");
+  const projectName = projectItems[i].querySelector(".project-name").innerText;
 
-// Close overlay if clicked outside the video
-videoOverlay.addEventListener("click", function (event) {
-  if (event.target === videoOverlay) {
-    videoOverlay.style.display = "none";
-    video.pause();
-    video.currentTime = 0;
-  }
-});
+  playButton.addEventListener("click", function () {
+    const video = document.getElementById("video-player");
+    const videoSource = video.querySelector("source");
+    video.play();
+    videoSource.src = projectNametoPath[projectName];
+    videoOverlay.style.display = "flex";
+
+    // Close overlay when close button is clicked
+    closeOverlay.addEventListener("click", function () {
+      videoOverlay.style.display = "none";
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    // Close overlay if clicked outside the video
+    videoOverlay.addEventListener("click", function (event) {
+      if (event.target === videoOverlay) {
+        videoOverlay.replaceChild;
+        videoOverlay.style.display = "none";
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+  });
+}
