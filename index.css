@@ -363,3 +363,82 @@ nav  a {
     color: white;
     cursor: pointer;
   }
+
+/*Style For Posts */
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.post-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.profile-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info .name {
+    font-weight: bold;
+    text-align: start;
+}
+
+.profile-info .details {
+    font-size: 0.9em;
+    color: #555;
+    text-align: start;
+}
+
+.post-content {
+    text-align: start;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.media{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.media img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.engagement {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.engagement button {
+    background: none;
+    border: none;
+    border-radius: 10px 10px;
+    color: rgb(104, 103, 103);
+    cursor: pointer;
+    font-size: 1em;
+    width: max-content;
+    padding: 10px;
+}
+
+.engagement button:hover {
+    background-color: #f1f1f1;
+}

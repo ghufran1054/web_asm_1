@@ -39,7 +39,7 @@ const closeOverlay = document.getElementById("closeOverlay");
 
 const projectNametoPath = {
   "Shogi (Japanese Chess)": "assets/chess_demo.mp4",
-  Eatopia: "assets/chess_demo.mp4",
+  'Eatopia': "assets/chess_demo.mp4",
   "WhatsApp Clone": "assets/chess_demo.mp4",
 };
 
@@ -51,10 +51,9 @@ for (let i = 0; i < projectItems.length; i++) {
   playButton.addEventListener("click", function () {
     const video = document.getElementById("video-player");
     const videoSource = video.querySelector("source");
-    video.play();
     videoSource.src = projectNametoPath[projectName];
-    videoOverlay.style.display = "flex";
-
+    video.replaceChild(videoSource, videoSource);
+    video.play();
     // Close overlay when close button is clicked
     closeOverlay.addEventListener("click", function () {
       videoOverlay.style.display = "none";
@@ -71,5 +70,6 @@ for (let i = 0; i < projectItems.length; i++) {
         video.currentTime = 0;
       }
     });
+    videoOverlay.style.display = "flex";
   });
 }
