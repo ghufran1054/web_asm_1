@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Python",
+      "description": "Skilled in Python for scripting, data analysis, and automating tasks, with expertise in data science libraries (Pandas, NumPy) and deep learning frameworks (TensorFlow, PyTorch) for building AI-driven solutions.",
+      "icon": "assets/python.png"
+    },
+    {
+      "name": "HTML, CSS & Javascript",
+      "description": "Proficient in creating responsive web pages semantic HTML, modern CSS (Flexbox, Grid), and dynamic JavaScript for seamless, interactive user experiences.",
+      "icon": "assets/web.png"
+    },
+    {
+      "name": "Flutter",
+      "description": "Experienced in building cross-platform mobile apps using Flutter, creating responsive, high-performance UIs with Dart, and integrating backend services for seamless functionality across Android and iOS.",
+      "icon": "assets/flutter.png"
+    },
+    {
+      "name": "C / C++",
+      "description": "Proficient in C / C++ for developing system software, embedded systems, and high-performance applications, with expertise in data structures, algorithms, and object-oriented programming concepts.",
+      "icon": "assets/cpp.png"
+    },
+    {
+      "name": "MongoDB & SQL",
+      "description": "Skilled in MongoDB for NoSQL database management and SQL for relational database management, with expertise in designing schemas, querying data, and optimizing database performance for efficient data storage and retrieval.",
+      "icon": "assets/db.png"
+    }
+  ]
+  

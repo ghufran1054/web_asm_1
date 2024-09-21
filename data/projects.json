@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Shogi - (Japanese Chess)",
+      "description": "A two-player strategy board game developed in C++, implementing the rules and gameplay of Shogi (Japanese Chess) with an interactive GUI for a seamless gaming experience.",
+      "github": "https://github.com/ghufran1054/Shogi-Japanese-Chess",
+      "demo": "assets/chess_demo.mp4"
+    },
+    {
+      "name": "Eatopia",
+      "description": "A food ordering and delivery app developed in Flutter, providing users with a platform to explore nearby restaurants, view menus, place orders, and track deliveries in real-time.",
+      "github": "https://github.com/ghufran1054/Eatopia",
+      "demo": "assets/chess_demo.mp4"
+    },
+    {
+      "name": "WhatsApp Clone",
+      "description": "Clone for whatsapp messenger application developed using Flutter. NodeJS used for backend and MongoDB to store user messages and Information",
+      "github": "https://github.com/ghufran1054/whatsapp_clone",
+      "demo": "assets/chess_demo.mp4"
+    }
+  ]
+  
